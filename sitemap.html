@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Map</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 40px;
+      background-color: white;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+    }
+
+    .home-box {
+      display: inline-block;
+      padding: 15px 30px;
+      border: 2px solid black;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .vertical-line {
+      width: 2px;
+      height: 40px;
+      background-color: black;
+      margin: 0 auto;
+    }
+
+    .horizontal-line {
+      width: 700px;
+      height: 2px;
+      background-color: black;
+      margin: 0 auto;
+    }
+
+    .pages {
+      width: 700px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      padding-top: 40px;
+    }
+
+    .page-box {
+      width: 140px;
+      padding: 15px 10px;
+      border: 2px solid black;
+      border-radius: 8px;
+      font-weight: bold;
+      background-color: white;
+      position: relative;
+    }
+
+    .page-box::before {
+      content: "";
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      width: 2px;
+      height: 40px;
+      background-color: black;
+      transform: translateX(-50%);
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Website Site Map</h1>
+
+  <div class="home-box">Home</div>
+
+  <div class="vertical-line"></div>
+  <div class="horizontal-line"></div>
+
+  <div class="pages">
+    <div class="page-box"><a href="Yourlastname.html">Yourlastname.html</a></div>
+    <div class="page-box"><a href="Mylinks.html">Mylinks.html</a></div>
+    <div class="page-box"><a href="Myhobby.html">Myhobby.html</a></div>
+    <div class="page-box"><a href="Mymobilelinks.html">Mymobilelinks.html</a></div>
+  </div>
+
+</body>
+</html>
